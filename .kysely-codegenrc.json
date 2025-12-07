@@ -1,0 +1,4 @@
+{
+  "camelCase": true,
+  "outFile": "./db/db.d.ts"
+}
