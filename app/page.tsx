@@ -1,9 +1,18 @@
 import { AddBookmarkForm } from "@components/AddBookmarkForm"
 import { BookmarksList } from "@components/BookmarksList"
+import { MetricsOverview } from "@components/MetricsOverview"
+import { Section } from "@components/Section"
+import { Analytics } from "@components/analytics/Analytics"
 
 export default function Home() {
   return (
     <div className="space-y-8">
+      <Section title="Overview">
+        <MetricsOverview />
+      </Section>
+      <Section title="Analytics">
+        <Analytics />
+      </Section>
       <section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-1">
